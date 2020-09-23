@@ -8,15 +8,25 @@ import Card from './components/layout/Card'
 import Repeticao from './components/Basicos/Repeticao'
 import Condicional from './components/Basicos/Condicional'
 import CondicionalComIf from './components/Basicos/CondicionalComIf'
+import Pai from './Comunicação/direta/Pai'
+import Super from './Comunicação/indireta/Super'
 
 export default (props) =>
     <div className="App">
+
+        <Card titulo="#08 Comunicação Indireta" color="#82683B">
+            <Super></Super>
+        </Card>
+
+        <Card titulo="#07 Comunicação Direta" color="#CD1719">
+            <Pai></Pai>
+        </Card>
 
         <Card titulo="#06 Condicional v2" color="#F38630">
             <CondicionalComIf numero={11}></CondicionalComIf>
         </Card>
 
-        <Card titulo="#05 Condicional v1" color="#1FDA9A ">
+        <Card titulo="#05 Condicional v1" color="#0087CB ">
             <Condicional numero={10}></Condicional>
         </Card>
 
@@ -34,7 +44,7 @@ export default (props) =>
             </ComFilhos>
         </Card>
 
-        <Card titulo="#02 Componente Com Parametro" color="#FF432E">
+        <Card titulo="#02 Componente Com Parametro" color="#5BB12F">
             <ComParametro titulo="Esse é o título" subtitulo="Esse é o subtítulo" />
         </Card>
 
@@ -44,4 +54,4 @@ export default (props) =>
 
 
 
-    </div>
+    </div >
