@@ -3,7 +3,7 @@ import Input from '@material-ui/core/Input';
 import TextField from '@material-ui/core/TextField';
 
 export default (props) => {
-    const [nome, setNome] = useState('Sergio Costa')
+    const [nome, setNome] = useState(null)
     return (
         <>
             <h3>{nome}</h3>
